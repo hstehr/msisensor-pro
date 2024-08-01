@@ -80,14 +80,8 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        # pwd
-        # cd vendor/htslib-1.11/
-        # ./configure
-        # make
-        # cd ../../cpp
         cd cpp
         make
-        exit 1
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
