@@ -80,11 +80,12 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        pwd
-        cd vendor/htslib-1.11/
-        ./configure
-        make
-        cd ../../cpp
+        #pwd
+        #cd vendor/htslib-1.11/
+        #./configure
+        #make
+        #cd ../../cpp
+        cd cpp
         make
         exit 1
 
