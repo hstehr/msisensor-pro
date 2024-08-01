@@ -80,7 +80,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        cd cd vendor/htslib-1.11/
+        cd vendor/htslib-1.11/
         ./configure
         make
         cd ../..
