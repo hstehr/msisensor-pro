@@ -80,6 +80,10 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
+        cd cd vendor/htslib-1.11/
+        ./configure
+        make
+        cd ../..
         cd cpp
         make
 
